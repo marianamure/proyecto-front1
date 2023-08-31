@@ -1,16 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 footer{
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
+.menu-footer{
+    display:flex;
+    margin:10px;
+}
 
-.menu-footer ul li{
+.logo, .logos-redes {
+    margin:10px;
+    padding: 10px;
+
+}
+
+.logos-redes img{
+    padding: 5px;
+}
+
+.links ul li a, li {
     text-decoration: none;
+    list-style-type: none;
     color: white ;
+    padding: 5px;
+    margin: 10px;
 }
+
 
 .CopyrightOcult{
     display:none
@@ -29,6 +53,11 @@ footer{
     .logotipo{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .logos-redes{
+        display: flex;
+        justify-content: space-between;
     }
     .CopyrightOcult{
         display:block
