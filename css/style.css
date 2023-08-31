@@ -1,20 +1,23 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    
 }
+
 footer{
-    background-color: black;
+    background-color: #1E1E26;
+}
+.footer{
+    width: 100%;
     color: white;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+    padding: 30px 0px 0px 0px;
+    box-sizing: border-box;
 }
 
 .menu-footer{
     display:flex;
-    margin:10px;
 }
 
 .logo, .logos-redes {
@@ -31,7 +34,23 @@ footer{
     text-decoration: none;
     list-style-type: none;
     color: white ;
-    padding: 5px;
+    padding: 0px 0px 10px 0px;
+}
+
+.menu-footer, .links, .form-footer{
+    margin: 10px  10px 0px 10px;
+}
+
+.form-footer,.logotipo{
+    padding: 10px 0px;
+}
+
+
+.logotipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px;
 }
 
@@ -40,27 +59,65 @@ footer{
     display:none
 }
 
+.Copyright{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.form-footer  form input{
+    border-radius: 40px;
+    padding: 10px 25px;
+}
+
+
+
+.go{
+    border-radius: 60px;
+    background-color:#8B48BF;
+    color:white;
+    padding: 10px 25px;
+}
+
+
 @media (max-width: 480px) {
     /* Escondemos el texto de la barra de navegación */
     
-    footer{
-        background-color: black;
+    .footer{
+        background-color:  #1E1E26;
         color: white;
         display: flex;
         flex-direction: column-reverse;
+        box-sizing: border-box;
+        align-items: center;
+        
 
     }
     .logotipo{
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px 10px;
     }
 
-    .logos-redes{
-        display: flex;
-        justify-content: space-between;
+    .logos-redes img{
+        padding:0px 20px;
+        width: 30px;
+        
     }
+    .logo{
+        width: 110px;
+        
+    }
+    .form-footer  form input{
+        padding: 10px 65px;
+    }
+
     .CopyrightOcult{
-        display:block
+        display:block;
+        margin: 40px 0px;
+
     }
 
     .Copyright{
