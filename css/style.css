@@ -6,11 +6,17 @@ footer{
     align-items: center;
 }
 
+
+.menu-footer ul li{
+    text-decoration: none;
+    color: white ;
+}
+
 .CopyrightOcult{
     display:none
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     /* Escondemos el texto de la barra de navegación */
     
     footer{
