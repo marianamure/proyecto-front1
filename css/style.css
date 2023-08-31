@@ -5,3 +5,31 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+
+.CopyrightOcult{
+    display:none
+}
+
+@media (max-width: 768px) {
+    /* Escondemos el texto de la barra de navegación */
+    
+    footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .logotipo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .CopyrightOcult{
+        display:block
+    }
+
+    .Copyright{
+        display:none
+    }
+
+}
