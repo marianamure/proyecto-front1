@@ -1,8 +1,56 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    
+    
 }
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 40px 25px;
+}
+
+.boton{
+    border-radius: 60px;
+    background-color:#8B48BF;
+    color:white;
+    padding: 12px 55px;
+    text-decoration: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:400px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu ul li a:hover{
+    color: rgba(179, 178, 183, 1);
+}
+
 
 footer{
     background-color: #1E1E26;
@@ -71,13 +119,12 @@ footer{
     padding: 10px 25px;
 }
 
-
-
 .go{
     border-radius: 60px;
     background-color:#8B48BF;
     color:white;
     padding: 10px 25px;
+    
 }
 
 .text-block{
@@ -86,6 +133,9 @@ footer{
     display: flex;
     padding: 20px;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .boton-white{
@@ -94,15 +144,41 @@ footer{
     color: #8B48BF;
     padding: 10px 25px;
     text-decoration: none;
+
+    
 }
 
-h2{
-    width: 70%;
+h2, h4{
+    width: 50%;
+    padding: 15px 25px;
 }
+ /* h2{ font-size: 30px;} */
 
 
 @media (max-width: 480px) {
-    /* Escondemos el texto de la barra de navegación */
+    .menu{
+        display: none;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-icon{
+        display: flex;
+        margin: 10px;
+        width: 30px;
+    }
+
+    .btn-menu{
+        background: none;         
+        border: none;            
+        padding: 0;               
+        outline: none;            
+        cursor: pointer; 
+    }
+    
     
     .footer{
         background-color:  #1E1E26;
@@ -145,7 +221,22 @@ h2{
     }
 
     .text-block{
+
         background-color: #3CDDF3;
         flex-direction:column ;
     }
+
+    h2, h4{
+        width: 100%;
+        padding: 15px 25px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+
+    .text-block-text2{
+        text-align: center;
+    }
+    
 }
