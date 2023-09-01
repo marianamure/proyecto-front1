@@ -10,7 +10,7 @@ body {
 }
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     box-sizing: border-box;
     align-items: center;
     margin: 40px 25px;
@@ -49,6 +49,33 @@ header{
 
 .menu ul li a:hover{
     color: rgba(179, 178, 183, 1);
+}
+
+.best-players{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px;
+
+}
+
+.players-cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.card img{
+    width: 50px;
 }
 
 
@@ -117,6 +144,7 @@ footer{
 .form-footer  form input{
     border-radius: 40px;
     padding: 10px 25px;
+    border: none;  
 }
 
 .go{
@@ -124,6 +152,7 @@ footer{
     background-color:#8B48BF;
     color:white;
     padding: 10px 25px;
+    border: none;  
     
 }
 
@@ -179,6 +208,14 @@ h2, h4{
         cursor: pointer; 
     }
     
+    .best-players .card {
+        display: none;
+    }
+
+    .best-players .card:nth-child(2) {
+        display: flex;
+    }
+
     
     .footer{
         background-color:  #1E1E26;
