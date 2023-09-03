@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
 }
 
 footer{
@@ -100,6 +101,88 @@ h2{
     width: 70%;
 }
 
+.intro{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    width: 1090px;
+    height: 461.07px;
+    margin: 0px, 90px,0px, 90px;
+    padding: 100px 175px 100px 175px;   
+}
+
+
+/*.text-intro{
+    width: 450px;
+    height: 399px;
+} ojo con esto!!! sirve o no*/
+
+.titulo-intro{
+    font-weight:700;
+    font-size: 52px;
+    color: #232851
+}
+
+.subtitulo-intro{
+    font-weight:500;
+    padding: 35px 0px 35px 0px;
+}
+.intro-img{
+    width: 540px;
+    height: 461px;
+}
+.boton-violeta{
+    border-radius: 60px;
+    background-color: #8B48BF;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.company-information{
+    background-color: #FAFAFA;
+}
+
+.company-text{
+    margin:10px;
+    color: rgba(179, 178, 183, 1);
+    padding-left: 47px;
+    text-align: justify;
+    width:437px;
+}
+
+.info01{
+    padding-right: 27px;
+}
+
+.block1 {
+    display: flex;
+    padding: 20px;
+    justify-content:center;
+    width: 1133px;
+    height: 162px;
+    padding: 40px 153.5px 20px 153.5px;
+}
+
+.block2 {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    width: 530px;
+    height: 162px;
+    padding: 0px 455px 10px 455px;
+
+}
+
+span{
+    border-radius: 60px;
+    background-color: #8B48BF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
 
 @media (max-width: 480px) {
     /* Escondemos el texto de la barra de navegación */
@@ -147,5 +230,52 @@ h2{
     .text-block{
         background-color: #3CDDF3;
         flex-direction:column ;
+    }
+
+    .intro{
+        flex-direction:column ;
+        align-content: space-around;
+        width: 400px;
+        height: 840.53px;
+        margin: 0px, 0px, 0px, 0px;
+        padding: 0px 40px 0px 10px;    
+    }
+
+    .texto-intro{
+        width: 400px;
+        height: 399px;
+    }
+
+    .titulo-intro{
+        font-weight:700;
+        font-size: 37px;
+        color: #232851
+    }
+
+    .intro-img{
+        width: 400px;
+        height:341.53px ;
+        margin-bottom: 40px;
+    }
+
+    .company-information ,.block1, .block2{
+        flex-direction:column ;
+        align-content: space-around;
+        width: 446px;
+        padding: 50px 0px 20px 10px;
+        background-color: white;
+        }
+    
+    .company-text{
+            text-align: justify;
+            width:428px;
+            padding: 15px 0px 15px 0px;
+    }
+
+    b{
+        border-radius: 60px;
+        background-color:rgba(139, 72, 191, 0.3);
+        padding: 10px 105px 10px 10px;
+        text-decoration: none;
     }
 }
