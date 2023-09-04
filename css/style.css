@@ -386,7 +386,7 @@ span{
             padding: 15px 0px 15px 0px;
     }
 
-    b{
+    .subtittle{
         border-radius: 60px;
         background-color:rgba(139, 72, 191, 0.3);
         padding: 10px 105px 10px 10px;
