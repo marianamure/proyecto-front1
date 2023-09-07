@@ -64,7 +64,7 @@ header{
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
-    width: 100%;
+
 }
 .go{
     border-radius: 60px;
@@ -309,9 +309,12 @@ h2, h4{
 
     /* banner y  servicios*/
     .text-block{
-
         background-color: #3CDDF3;
         flex-direction:column ;
+    }
+
+    .boton-white{
+        margin: 0 ;
     }
 
     .intro{
