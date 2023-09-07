@@ -1,15 +1,16 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    
+    margin: 0;
+    padding: 0;
     
 }
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
-    font-size: 16px;
     counter-reset: miContador 00; 
 }
+
+/* nav superior y todo lo del menu */
+
 header{
     display: flex;
     justify-content: space-evenly;
@@ -24,23 +25,6 @@ header{
     color:white;
     padding: 12px 55px;
     text-decoration: none;
-}
-
-.subtittle::before{
-    display: inline-block;
-    counter-increment: miContador; 
-    content: counter(miContador, decimal-leading-zero) " ";
-    border-radius: 100px;
-    background-color: #8B48BF;
-    color: white;
-    padding: 10px 15px;
-    margin-right: 50px;
-
-
-}
-
-.subtittle{
-    padding: 50px;
 }
 
 .menu-icon{
@@ -70,6 +54,135 @@ header{
     color: rgb(249, 249, 249);
 }
 
+/* banner y  servicios*/
+
+.text-block{
+    background-color: #8B48BF;
+    color:white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.go{
+    border-radius: 60px;
+    background-color:#8B48BF;
+    color:white;
+    padding: 10px 25px;
+    border: none;    
+}
+
+
+.boton-white{
+    border-radius: 60px;
+    background-color:white;
+    color: #8B48BF;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0 200px;
+
+}
+
+.subtittle::before{
+    display: inline-block;
+    counter-increment: miContador; 
+    content: counter(miContador, decimal-leading-zero) " ";
+    border-radius: 100px;
+    background-color: #8B48BF;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 50px;
+
+
+}
+
+.subtittle{
+    padding: 50px;
+}
+
+h2, h4{
+    width: 50%
+}
+
+.text-block h2{
+    padding: 15px 25px;
+    font-size: 40px;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    width: 1090px;
+    height: 461.07px;
+    margin: 0, 90px,0, 90px;
+    padding: 100px 175px 100px 175px;   
+}
+
+
+.titulo-intro{
+    font-weight:700;
+    font-size: 52px;
+    color: #232851
+}
+
+.subtitulo-intro{
+    font-weight:500;
+    padding: 35px 0px 35px 0px;
+}
+.intro-img{
+    width: 540px;
+    height: 461px;
+}
+.boton-violeta{
+    border-radius: 60px;
+    background-color: #8B48BF;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.company-information{
+    background-color: #FAFAFA;
+}
+
+.company-text{
+    margin:10px;
+    color: rgba(179, 178, 183, 1);
+    padding-left: 47px;
+    text-align: justify;
+    width:437px;
+}
+
+.info01{
+    padding-right: 27px;
+}
+
+.block1 {
+    display: flex;
+    padding: 20px;
+    justify-content:center;
+    width: 1133px;
+    height: 162px;
+    padding: 40px 153.5px 20px 153.5px;
+}
+
+.block2 {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    width: 530px;
+    height: 162px;
+    padding: 0px 455px 10px 455px;
+
+}
+
+    /*  los mejores jugadores*/
+
 .best-players{
     display: flex;
     flex-direction: column;
@@ -98,10 +211,10 @@ header{
 }
 
 
-footer{
-    background-color: #1E1E26;
-}
+/* todo el footer y su navegación */
+
 .footer{
+    background-color: #1E1E26;
     width: 100%;
     color: white;
     display: flex;
@@ -166,120 +279,11 @@ footer{
     border: none;  
 }
 
-.go{
-    border-radius: 60px;
-    background-color:#8B48BF;
-    color:white;
-    padding: 10px 25px;
-    border: none;  
-    
-}
 
-.text-block{
-    background-color: #8B48BF;
-    color:white;
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.boton-white{
-    border-radius: 60px;
-    background-color:white;
-    color: #8B48BF;
-    padding: 10px 25px;
-    text-decoration: none;
-
-    
-}
-
-h2, h4{
-    width: 50%;
-    padding: 15px 25px;
-}
-
-.intro{
-    display: flex;
-    align-items: center;
-    text-align: end;
-    width: 1090px;
-    height: 461.07px;
-    margin: 0px, 90px,0px, 90px;
-    padding: 100px 175px 100px 175px;   
-}
-
-
-/*.text-intro{
-    width: 450px;
-    height: 399px;
-} ojo con esto!!! sirve o no*/
-
-.titulo-intro{
-    font-weight:700;
-    font-size: 52px;
-    color: #232851
-}
-
-.subtitulo-intro{
-    font-weight:500;
-    padding: 35px 0px 35px 0px;
-}
-.intro-img{
-    width: 540px;
-    height: 461px;
-}
-.boton-violeta{
-    border-radius: 60px;
-    background-color: #8B48BF;
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-}
-
-.company-information{
-    background-color: #FAFAFA;
-}
-
-.company-text{
-    margin:10px;
-    color: rgba(179, 178, 183, 1);
-    padding-left: 47px;
-    text-align: justify;
-    width:437px;
-}
-
-.info01{
-    padding-right: 27px;
-}
-
-.block1 {
-    display: flex;
-    padding: 20px;
-    justify-content:center;
-    width: 1133px;
-    height: 162px;
-    padding: 40px 153.5px 20px 153.5px;
-}
-
-.block2 {
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
-    width: 530px;
-    height: 162px;
-    padding: 0px 455px 10px 455px;
-
-}
-
-
-
- /* h2{ font-size: 30px;} */
 
 
 @media (max-width: 480px) {
+    /* nav superior y todo lo del menu */
     .menu{
         display: none;
     }
@@ -302,56 +306,8 @@ h2, h4{
         outline: none;            
         cursor: pointer; 
     }
-    
-    .best-players .card {
-        display: none;
-    }
 
-    .best-players .card:nth-child(2) {
-        display: flex;
-    }
-
-    
-    .footer{
-        background-color:  #1E1E26;
-        color: white;
-        display: flex;
-        flex-direction: column-reverse;
-        box-sizing: border-box;
-        align-items: center;
-        
-
-    }
-    .logotipo{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        margin: 0px 10px;
-    }
-
-    .logos-redes img{
-        padding:0px 20px;
-        width: 30px;
-        
-    }
-    .logo{
-        width: 110px;
-        
-    }
-    .form-footer  form input{
-        padding: 10px 65px;
-    }
-
-    .CopyrightOcult{
-        display:block;
-        margin: 40px 0px;
-
-    }
-
-    .Copyright{
-        display:none
-    }
-
+    /* banner y  servicios*/
     .text-block{
 
         background-color: #3CDDF3;
@@ -398,9 +354,6 @@ h2, h4{
             padding: 15px 0px 15px 0px;
     }
 
-
-
-
     .subtittle::before{
         display: inline-block;
         counter-increment: miContador;  /* Incrementa 'miContador' en 1 */
@@ -410,9 +363,7 @@ h2, h4{
         color: white;
         padding: 10px 15px;
         margin-right: 5px;
-
     }
-
 
     .subtittle{
         border-radius: 60px;
@@ -435,5 +386,60 @@ h2, h4{
     .text-block-text2{
         text-align: center;
     }
+
+
+
+    
+    /*  los mejores jugadores*/
+    .best-players .card {
+        display: none;
+    }
+
+    .best-players .card:nth-child(2) {
+        display: flex;
+    }
+
+    /* todo el footer y su navegación */
+    .footer{
+        background-color:  #1E1E26;
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        align-items: center;
+        
+
+    }
+    .logotipo{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px 10px;
+    }
+
+    .logos-redes img{
+        padding:0px 20px;
+        width: 30px;
+        
+    }
+    .logo{
+        width: 110px;
+        
+    }
+    .form-footer  form input{
+        padding: 10px 65px;
+    }
+
+    .CopyrightOcult{
+        display:block;
+        margin: 40px 0px;
+
+    }
+
+    .Copyright{
+        display:none
+    }
+
+
     
 }
